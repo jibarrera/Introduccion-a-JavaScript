@@ -1,1 +1,20 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Insertar Javascript</title>
+</head>
+<body>
+
+	<h1>Insertar Javascript</h1>
+
+	<script type="text/javascript">
+  
+		// print abre el cuadro de dialogo de impresión.
+		print()
+
+
+	</script>
+</body>
+</html>
