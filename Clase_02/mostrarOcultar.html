@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mostrar / Ocultar</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<h1>Mostrar / Ocultar</h1>
+
+	<a href= "#" onclick = "ocultar()">ocultar</a>
+	<a href="#" onclick = "mostrar()">mostrar</a>
+	<a href="#">Mostrar/Ocultar</a>
+
+	<div id="caja"></div>
+
+	<script>
+		//Ubicar elemento/s dentro del DOM.
+		var caja = document.getElementById('caja');
+
+
+
+
+		//generar función/eS
+		function ocultar()
+		{
+			// 1° Forma: caja.style.opacity = 0;
+			// 2° Forma: caja.style.visibility = "hidden";
+			caja.style.display = 'none';
+
+		}
+
+
+		function mostrar()
+		{
+			//1° Forma: caja.style.opacity = 1;
+			//2° Forma: caja.style.visibility = 'visible';
+			caja.style.display = 'block';
+
+		}
+
+		function mostrarOcultar()
+		{
+
+			if (caja.style.display == 'none') {
+				mostrar();
+
+			}
+			else {
+
+				ocultar();
+			}
+
+		}
+
+	</script>
+
+
+
+
+</body>
+</html>

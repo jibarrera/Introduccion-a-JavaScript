@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Condicional en Javascript</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<h1>Condicional en Javascript</h1>
+
+	<img src="img/error.png" id="logo">
+
+	<script>
+
+		
+		var numero = prompt('Ingrese un numero:');
+
+		//variable que encuentra en el documento un elemento que se llame 'Logo'.
+		var logo = document.getElementById('logo');
+
+		if (numero < 100){
+			logo.src = 'img/ok.png';
+		}
+		else{
+			logo. src = 'img/error.png';
+		}
+
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>
