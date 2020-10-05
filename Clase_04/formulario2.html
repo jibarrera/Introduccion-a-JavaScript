@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario JS</title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body style="background-image: url(img/fondo1.jpg);">
+	<header>
+		<div class="container col-12">
+			<hr class="alert alert-success">
+		</div>
+	</header>
+
+	<main class="container">
+		<h1><strong>Formulario - Validación con JavaScript</strong></h1>
+
+		<div class="alert alert-danger p-4 col-8 mx-auto">
+
+	<!-------------------------     Creacion del Formulario con JavaScript    -------------------------------------------->
+
+			<form action="procesarDatos.php" method="post" onsubmit=" return validar()">
+				Nombre: <br>
+				<input type="text" name="nombre" class="form-control" placeholder="Ingrese su Nombre... ">
+				<small class="mb-4 text-danger" id="errorNombre"></small>
+				<br>
+
+				Apellido: <br>
+				<input type="text" name="apellido" class="form-control" placeholder="Ingrese su Apellido...">
+				<small class="mb-4 text-danger" id="errorApellido"></small>
+				<br>
+
+				Email: <br>
+				<input type="email" name="email" class="form-control" placeholder="info@gmail.com">
+				<small class="mb-4 text-danger" id="errorEmail"> </small>
+				<br>
+				<label> País:<br>
+					<select  class="form-control">
+						<small class="mb-4 text-danger"></small>
+						<option  class="form-control mb-3">Seleccione País:</option>
+						<option>Argentina</option>
+						<option>Brasil</option>
+						<option>Uruguay</option>
+						<option>Chile</option>
+						<option>Bolivia</option>
+						<option>Paraguay</option>
+						<option>EE.UU.</option>
+					</select>
+				<br>
+				<button class="btn btn-dark">Enviar Formulario</button>
+
+			</form>
+
+
+		</div>
+		<br>
+	</main>
+
+
+	<script src="js/formulario.js"></script>
+
+	<footer style="color: #d52400; text-align: center; font-size: 15px;">
+		<br>
+		2020 | Todos los derechos reservados | Jose Ivan Barrera
+		
+	</footer>
+		
+</body>
+</html>
