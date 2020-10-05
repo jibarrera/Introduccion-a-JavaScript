@@ -1,0 +1,13 @@
+body{
+	background-color: lightblue;
+	font-family: Helvetico;
+	color: grey;
+	font-size: 20px;
+}
+
+#caja{
+	width: 210px;
+	height: 100px;
+	background-color: #666;
+	margin-top: 20px;
+}

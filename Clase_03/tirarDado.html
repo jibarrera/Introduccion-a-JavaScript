@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tirar Dado usando Javacript</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+
+<!------------------------------------------Nav - Barra de Navegación--------------------------------------------------------->	
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand">Lanzamiento de Dado usando JS</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  </div>
+</nav>
+
+<!------------------------------------------Contenedor de Boton Tirar Dado e Imagen del Dado---------------------------------->
+
+	<main class="container">
+		<br>
+
+
+		<button  style="width : 100%;" class="btn btn-warning" onclick="tirarDado()">Tirar Dado!</button>
+		<br>
+		<br>
+		<figure class="card">
+			<center>
+				<img src="img/dado1.png" id="verDado"  style="height: 50%; width: 50%;" class="img-thumbnail">
+			</center>
+		</figure>
+
+		
+	</main>
+
+<!-------------------------------------------Funcion Javascript TirarDado----------------------------------------------------->
+
+	<script src="js/tirarDado.js"></script>
+</body>
+</html>
+
+
+
+<!-- Bootstrap es una Libreria de Front End. Es un conjunto de codigos que ya esta hecho y que lo puedo usar en mi proyecto. Esta pensado para el navegador con HTML.
